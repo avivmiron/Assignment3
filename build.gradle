@@ -1,0 +1,14 @@
+group 'com.miron'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'idea'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.apache.hadoop', name: 'hadoop-core', version: '1.2.1'
+}
